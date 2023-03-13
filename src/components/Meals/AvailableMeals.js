@@ -44,7 +44,7 @@ const AvailableMeals = () => {
         //as we are fetching data from firebase and  it will return a  promise therefore  we have to make it async , but we can not directly do it
         // therefor we are using an other funtion inside useEffect and make it async await to get rid of promise returned
         const fetchData = async () =>{
-            const response = await fetch('https://food-order-app-361cc-default-rtdb.firebaseio.com/meals.json');
+            const response = await fetch('https://food-order-app-fc617-default-rtdb.firebaseio.com/meals.json');
 
             //checking for error
             if(!response.ok){
